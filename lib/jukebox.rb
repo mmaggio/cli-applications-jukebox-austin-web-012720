@@ -14,10 +14,8 @@ def play
 end
 
 def list(songs)
-  song_number = 1
-  songs.each do |song|
-    puts "#{song_number}. #{song}"
-    song_number += 1
+  songs.each_with_index do |song, index|
+    puts "#{index + 1}. #{song}"
   end
 end
 
