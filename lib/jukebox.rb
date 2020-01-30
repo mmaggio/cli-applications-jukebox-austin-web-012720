@@ -14,6 +14,8 @@ def play
 end
 
 def list(songs)
+  song_number = 1
+  songs.each do |
   
 end
 
