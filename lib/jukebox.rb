@@ -35,16 +35,16 @@ def exit_jukebox
 end
 
 def run(songs)
+  puts "Please enter a command:"
+  command = gets.strip
   
-  #prompt user
-  #user input
-  case input
-    when play
+  until command = "exit"
+    case input
+      when play
      
-    when list
+      when list
        
-    when exit
-         
-    else
+    end
   end
+  exit_jukebox
 end
