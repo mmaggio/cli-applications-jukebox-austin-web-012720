@@ -21,7 +21,7 @@ def play(songs)
     index = user_response.to_i - 1
     puts "Playing #{songs[index]}"
   else
-    "Invalid input, please try again"
+    puts "Invalid input, please try again"
   end
 end
 
