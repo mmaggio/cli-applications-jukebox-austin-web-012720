@@ -19,7 +19,7 @@ def play(songs)
     puts "Playing #{user_response}"
   else
     "Invalid input, please try again"
-    
+  end
 end
 
 def list(songs)
