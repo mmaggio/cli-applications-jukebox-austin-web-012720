@@ -15,8 +15,10 @@ end
 
 def list(songs)
   song_number = 1
-  songs.each do |
-  
+  songs.each do |song|
+    puts "#{song_number}. #{song}"
+    song_number += 1
+  end
 end
 
 def exit_jukebox
