@@ -16,7 +16,9 @@ def play(songs)
     index = user_response - 1
     puts "Playing #{songs[index]}"
   elsif songs.include?(user_response)
-    
+    puts "Playing #{user_response}"
+  else
+    "Invalid input, please try again"
     
 end
 
