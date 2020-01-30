@@ -33,10 +33,10 @@ def exit_jukebox
 end
 
 def run(songs)
+  command = nil
+  until command == "exit"
   puts "Please enter a command:"
   command = gets.strip
-  
-  until command == "exit"
     case command
       when "play"
         play(songs)
