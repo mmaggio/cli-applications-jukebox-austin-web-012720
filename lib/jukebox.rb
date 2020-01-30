@@ -16,7 +16,7 @@ def exit_jukebox
   
 end
 
-def run
+def run(songs)
   
   #prompt user
   #user input
