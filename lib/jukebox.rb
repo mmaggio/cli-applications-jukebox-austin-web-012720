@@ -39,7 +39,7 @@ def run(songs)
   command = gets.strip
   
   until command = "exit"
-    case input
+    case command
       when play
         play(songs)
       when list
