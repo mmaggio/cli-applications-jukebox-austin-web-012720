@@ -15,7 +15,7 @@ def play(songs)
   if user_response == 1..9  
     index = user_response - 1
     puts "Playing #{songs[index]}"
-    elsif songs.include?(user_response)
+  elsif songs.include?(user_response)
     
     
 end
