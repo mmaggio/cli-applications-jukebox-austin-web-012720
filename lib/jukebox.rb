@@ -10,13 +10,15 @@ def help
 end
 
 def play(songs)
-  puts "Please enter a song name or number:"
+ puts "Please enter a song name or number:"
   user_response = gets.strip
-  if user_response == 1..9  
-    index = user_response - 1
-    puts "Playing #{songs[index]}"
-  elsif songs.include?(user_response)
+  if songs.include?(user_response)
     puts "Playing #{user_response}"
+  end
+
+  if user_response.to_i.between?(1,9)  
+    index = user_response.to_i - 1
+    puts "Playing #{songs[index]}"
   else
     "Invalid input, please try again"
   end
