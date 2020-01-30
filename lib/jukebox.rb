@@ -41,9 +41,11 @@ def run(songs)
   until command = "exit"
     case input
       when play
-     
+        play(songs)
       when list
-       
+        list(songs)
+      when help
+       help
     end
   end
   exit_jukebox
