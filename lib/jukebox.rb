@@ -12,10 +12,11 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
-  if user_response == 1..9  songs.include?(user_response)
+  if user_response == 1..9  
     index = user_response - 1
     puts "Playing #{songs[index]}"
-    elsif
+    elsif songs.include?(user_response)
+    
     
 end
 
