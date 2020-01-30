@@ -38,13 +38,13 @@ def run(songs)
   puts "Please enter a command:"
   command = gets.strip
   
-  until command = "exit"
+  until command == "exit"
     case command
-      when play
+      when "play"
         play(songs)
-      when list
+      when "list"
         list(songs)
-      when help
+      when "help"
        help
     end
   end
