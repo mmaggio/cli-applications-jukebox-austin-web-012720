@@ -14,9 +14,7 @@ def play(songs)
   user_response = gets.strip
   if songs.include?(user_response)
     puts "Playing #{user_response}"
-  end
-
-  if user_response.to_i.between?(1,9)  
+  elsif user_response.to_i.between?(1,9)  
     index = user_response.to_i - 1
     puts "Playing #{songs[index]}"
   else
