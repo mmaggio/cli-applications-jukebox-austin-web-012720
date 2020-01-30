@@ -12,7 +12,6 @@ end
 def play(songs)
  puts "Please enter a song name or number:"
   user_response = gets.strip
-  binding.pry
   if songs.include?(user_response)
     puts "Playing #{user_response}"
   end
